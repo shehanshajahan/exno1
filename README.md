@@ -26,38 +26,60 @@ Data Cleaning
 import pandas as pd
 df=pd.read_csv("SAMPLEIDS.csv")
 df
+
 ![image](https://github.com/user-attachments/assets/bcfec230-2858-4384-a146-6b425f51539c)
 
+
 df.isnull()
+
 ![image](https://github.com/user-attachments/assets/37203415-a828-41ec-9780-13849620088a)
 
+
 df.notnull()
+
 ![image](https://github.com/user-attachments/assets/5dab5d99-8541-43bb-b165-45f379d32625)
 
+
 df.isnull().sum()
+
 ![image](https://github.com/user-attachments/assets/92e87ac0-1066-41a8-a925-180db8373e31)
 
+
 df.isnull().any()
+
 ![image](https://github.com/user-attachments/assets/775bf6da-8c49-4f01-82c3-56c4fe204b51)
 
+
 df.dropna()
+
 ![image](https://github.com/user-attachments/assets/775b3009-ae39-4535-9224-a335fca0455f)
 
+
 df.fillna(0)
+
 ![image](https://github.com/user-attachments/assets/07eed205-7b65-4542-9926-c550e9c0ee63)
 
+
 df.fillna(method = 'ffill')
+
 ![image](https://github.com/user-attachments/assets/e7f524cf-e21f-4fc2-8791-630dc23ce974)
 
+
 df.fillna(method = 'bfill')
+
 ![image](https://github.com/user-attachments/assets/13f2b93d-d746-4305-abcf-c2fceb8648e1)
+
 
 df_dropped = df.dropna()
 df_dropped
+
 ![image](https://github.com/user-attachments/assets/fd70d6af-4cb6-43fc-9da1-69f3b9a99128)
 
+
 df.fillna({'GENDER':'MALE','NAME':'SRI','ADDRESS':'POONAMALEE','M1':98,'M2':87,'M3':76,'M4':92,'TOTAL':305,'AVG':89.999999})
+
 ![image](https://github.com/user-attachments/assets/b45e5b96-1f59-4ac7-a39c-dc247c96fac5)
+
 
 IQR(Inter Quartile Range)
 
